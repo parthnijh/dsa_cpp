@@ -1,0 +1,9 @@
+use unordered map first always as it taked o(1) tc to store and fetch and map takes o(logn) as it sorts the elements too however,
+if unordered map gives tle use map,unordered map will fail in case of collision.
+
+before we understand the collision we need to understand division method
+division method
+[2,5,26,139] we cant make array of size >10 and need to use array hashing
+then we modulo each no with 10
+collision happens when each number ends up to similar hash place for eg[18,78,...1008] and every one them end at 8
+now it takes o(n) for unordered_map
